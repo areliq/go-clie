@@ -37,7 +37,7 @@ func init() {
 	viper.BindPFlag("useViper", rootCmd.PersistentFlags().Lookup("viper"))
 	viper.SetDefault("author", "NAME HERE <EMAIL ADDRESS>")
 
-	fmt.Println(viper.GetString("author"))
+	// fmt.Println(viper.GetString("author"))
 
 	rootCmd.AddCommand(versionCmd)
 }
